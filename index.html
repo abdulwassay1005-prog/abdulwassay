@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Wassay — Digital Marketer & GHL Automation Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0a0c',
+                        cardbg: '#141418',
+                        cardborder: '#27272a',
+                        accent: '#6366f1',
+                        accenthover: '#4f46e5'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0c;
+            color: #f3f4f6;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.15);
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-darkbg text-gray-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-cardborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-gray-200 to-indigo-400 bg-clip-text text-transparent">
+                ABDUL WASSAY
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#services" class="hover:text-indigo-400 transition">Services</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Featured Systems</a>
+                <a href="#experience" class="hover:text-indigo-400 transition">Experience</a>
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-white text-darkbg font-semibold text-sm hover:bg-gray-200 transition shadow-lg transform hover:-translate-y-0.5">
+                    Hire Me / Call <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardbg border-b border-cardborder px-6 py-4 space-y-3">
+            <a href="#services" class="block text-gray-300 hover:text-indigo-400 py-1 mobile-link">Services</a>
+            <a href="#projects" class="block text-gray-300 hover:text-indigo-400 py-1 mobile-link">Featured Systems</a>
+            <a href="#experience" class="block text-gray-300 hover:text-indigo-400 py-1 mobile-link">Experience</a>
+            <a href="#about" class="block text-gray-300 hover:text-indigo-400 py-1 mobile-link">About</a>
+            <a href="#contact" class="block text-center w-full mt-2 px-5 py-2.5 rounded-full bg-white text-darkbg font-semibold text-sm mobile-link">Hire Me / Call</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cardborder/50 border border-cardborder text-xs sm:text-sm font-medium text-indigo-400 mb-6 backdrop-blur-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Available for Remote Roles & GHL Setup</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
+                ABDUL <span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-white bg-clip-text text-transparent">WASSAY</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl md:text-2xl font-light text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Digital Marketer, <span class="text-gray-200 font-medium">GHL Automation Specialist</span> & Web Developer turning leads into high-converting systems.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition shadow-lg shadow-indigo-600/30 flex items-center justify-center space-x-2">
+                    <span>Explore My Work</span>
+                    <i class="fa-solid fa-arrow-down text-sm"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cardbg hover:bg-cardborder border border-cardborder text-gray-200 font-semibold transition flex items-center justify-center space-x-2">
+                    <span>Get In Touch</span>
+                    <i class="fa-regular fa-envelope text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Metrics Bar -->
+    <section class="py-12 border-y border-cardborder bg-cardbg/40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4 rounded-2xl bg-cardbg border border-cardborder/60">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-white mb-1">~1,000</div>
+                    <div class="text-xs sm:text-sm font-medium text-gray-400">Leads Targeted</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-cardbg border border-cardborder/60">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400 mb-1">500+</div>
+                    <div class="text-xs sm:text-sm font-medium text-gray-400">Email Opens</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-cardbg border border-cardborder/60">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-white mb-1">50+</div>
+                    <div class="text-xs sm:text-sm font-medium text-gray-400">Link Clicks</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-cardbg border border-cardborder/60">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400 mb-1">Multiple</div>
+                    <div class="text-xs sm:text-sm font-medium text-gray-400">Prospect Responses</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-16">
+            <div class="text-indigo-400 font-semibold text-sm tracking-wider uppercase mb-3">/ 01 — SERVICES</div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">What I Do</h2>
+            <p class="text-gray-400 mt-3 max-w-2xl">Specialized digital marketing solutions focused on scaling acquisition through automation, robust GHL workflows, and clean web engineering.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Service 1 -->
+            <div class="p-8 rounded-3xl bg-cardbg border border-cardborder hover:border-indigo-500/50 transition group">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">GoHighLevel (GHL) Automation</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">End-to-end setup of GHL marketing workflows, pipelines, lead-capture forms, dynamic calendars, and automated booking systems to turn cold traffic into booked calls.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="p-8 rounded-3xl bg-cardbg border border-cardborder hover:border-indigo-500/50 transition group">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">B2B Lead Generation & Outreach</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Cold email outreach campaigns using Apollo.io for targeted lead lists, coupled with multi-step email sequence automation, follow-ups, and engagement tracking.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="p-8 rounded-3xl bg-cardbg border border-cardborder hover:border-indigo-500/50 transition group">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">WordPress & Landing Pages</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Custom, mobile-responsive WordPress business and event sites built with Elementor and Gutenberg, focused on clean layouts, speed, and high-converting CTAs.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="p-8 rounded-3xl bg-cardbg border border-cardborder hover:border-indigo-500/50 transition group">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">SEO & Analytics Optimization</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">On-page SEO optimization, deep keyword research using Ahrefs, Rank Math configuration, and tracking discoverability through Google Search Console.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Systems & Projects -->
+    <section id="projects" class="py-24 bg-cardbg/30 border-y border-cardborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <div class="text-indigo-400 font-semibold text-sm tracking-wider uppercase mb-3">/ 02 — WORK</div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Key Systems Built in GHL</h2>
+                    <p class="text-gray-400 mt-3 max-w-xl">Architected and deployed enterprise-grade marketing and outreach systems at NerithonX Technologies.</p>
+                </div>
+                <div class="text-xs font-semibold px-4 py-2 rounded-full bg-indigo-600/20 text-indigo-300 border border-indigo-500/30">
+                    Proven Track Record
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="p-8 rounded-3xl bg-cardbg border border-cardborder flex flex-col justify-between hover:border-indigo-500/50 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-indigo-400 px-3 py-1 rounded-full bg-indigo-500/10">Booking Workflow</span>
+                            <i class="fa-solid fa-calendar-check text-gray-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Odoo Consultation & Booking System</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Designed lead-capture forms, interactive calendars, multi-stage pipelines, and automated confirmation emails to systematically convert inbound consultation leads.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-cardborder">
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">GoHighLevel</span>
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">Pipelines</span>
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">Calendars</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="p-8 rounded-3xl bg-cardbg border border-cardborder flex flex-col justify-between hover:border-indigo-500/50 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-indigo-400 px-3 py-1 rounded-full bg-indigo-500/10">B2B Outreach</span>
+                            <i class="fa-solid fa-handshake text-gray-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Partnership Outreach System</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Built a comprehensive GHL email outreach system tailored for identifying and engaging potential business partners with tailored automated follow-ups.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-cardborder">
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">Apollo.io</span>
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">Email Sequences</span>
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">Tracking</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="p-8 rounded-3xl bg-cardbg border border-cardborder flex flex-col justify-between hover:border-indigo-500/50 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-indigo-400 px-3 py-1 rounded-full bg-indigo-500/10">Client Acquisition</span>
+                            <i class="fa-solid fa-server text-gray-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Odoo & DevOps Client Outreach</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Automated outbound lead nurturing workflows targeted specifically at Odoo and DevOps prospects to drive qualified responses and pipeline growth.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-cardborder">
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">Automation</span>
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">CRM Management</span>
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">Workflows</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="p-8 rounded-3xl bg-cardbg border border-cardborder flex flex-col justify-between hover:border-indigo-500/50 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-indigo-400 px-3 py-1 rounded-full bg-indigo-500/10">Web Development</span>
+                            <i class="fa-solid fa-globe text-gray-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Responsive Business & Event Websites</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Designed and deployed high-performance WordPress sites using Elementor, following rigorous on-page SEO best practices and responsive design standards.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-cardborder">
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">WordPress</span>
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">Elementor</span>
+                        <span class="text-xs px-3 py-1 rounded-md bg-darkbg text-gray-300 border border-cardborder">On-Page SEO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-16">
+            <div class="text-indigo-400 font-semibold text-sm tracking-wider uppercase mb-3">/ 03 — CAREER</div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Work Experience</h2>
+        </div>
+
+        <div class="space-y-8 border-l-2 border-cardborder pl-6 ml-2 sm:ml-4">
+            <!-- Exp 1 -->
+            <div class="relative">
+                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-darkbg"></div>
+                <div class="p-6 rounded-2xl bg-cardbg border border-cardborder">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">GHL Administrator & Digital Marketer</h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 w-fit mt-1 sm:mt-0">2025 – Present</span>
+                    </div>
+                    <div class="text-sm font-medium text-gray-400 mb-4">NerithonX Technologies</div>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Plan and execute B2B inbound and outbound lead generation campaigns using GoHighLevel and Apollo.io. Built automated email sequences targeting ~1,000 leads with 500+ opens and 50+ link clicks. Managed WordPress sites and SEO strategy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exp 2 -->
+            <div class="relative">
+                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-darkbg"></div>
+                <div class="p-6 rounded-2xl bg-cardbg border border-cardborder">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Operations Manager</h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 w-fit mt-1 sm:mt-0">Jan 2025 – Present</span>
+                    </div>
+                    <div class="text-sm font-medium text-gray-400 mb-4">Skills4U</div>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Manage daily operations, scheduling, team coordination, and participant support for training programs, maintaining documentation and internal communication pipelines.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exp 3 -->
+            <div class="relative">
+                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-darkbg"></div>
+                <div class="p-6 rounded-2xl bg-cardbg border border-cardborder">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">WordPress Developer</h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 w-fit mt-1 sm:mt-0">Oct 2023 – Present</span>
+                    </div>
+                    <div class="text-sm font-medium text-gray-400 mb-4">Zoim Web Development Agency</div>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Design and develop mobile-responsive business and event websites using Elementor and Gutenberg. Configure plugins, translate client wireframes, and support live deployments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="py-24 bg-cardbg/30 border-y border-cardborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <div class="text-indigo-400 font-semibold text-sm tracking-wider uppercase mb-3">/ 04 — BACKGROUND</div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">Education & Certifications</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="p-6 rounded-2xl bg-cardbg border border-cardborder">
+                            <div class="text-indigo-400 text-xs font-bold uppercase tracking-wider mb-1">University Degree</div>
+                            <h3 class="text-lg font-bold text-white">BS Computer Science</h3>
+                            <div class="text-gray-400 text-sm">CECOS University, Peshawar (Oct 2021 – Nov 2025)</div>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-cardbg border border-cardborder">
+                            <div class="text-indigo-400 text-xs font-bold uppercase tracking-wider mb-1">Professional Certifications</div>
+                            <ul class="space-y-2 text-sm text-gray-300 mt-2">
+                                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> <span>Complete WordPress Course: Elementor (Udemy)</span></li>
+                                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> <span>WordPress Course (DigiSkills)</span></li>
+                                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> <span>Prompt Engineering (Great Learning)</span></li>
+                                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> <span>LinkedIn Masterclass (Skills4U)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="text-indigo-400 font-semibold text-sm tracking-wider uppercase mb-3">/ 05 — EXPERTISE</div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">Core Skills & Tools</h2>
+                    
+                    <div class="p-8 rounded-3xl bg-cardbg border border-cardborder h-full flex flex-col justify-between">
+                        <div class="flex flex-wrap gap-2.5">
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">GoHighLevel (GHL)</span>
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">Email Marketing</span>
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">B2B Lead Generation</span>
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">Apollo.io</span>
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">On-Page SEO</span>
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">Ahrefs & Search Console</span>
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">WordPress & Elementor</span>
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">Marketing Automation</span>
+                            <span class="px-4 py-2 rounded-xl bg-darkbg border border-cardborder text-sm font-medium text-gray-200">Google Analytics</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-6 pt-4 border-t border-cardborder">
+                            Equipped with a solid technical foundation in Computer Science combined with hands-on marketing automation execution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="py-28 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-600/5 to-transparent pointer-events-none"></div>
+        
+        <div class="relative z-10">
+            <h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">Let's Build Something Great</h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
+                Looking for a GHL Administrator, Digital Marketing Intern, or Automation Specialist? Let's connect and scale your pipeline.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+                <!-- Copy Email Button -->
+                <button onclick="copyEmail()" id="copy-btn" class="px-6 py-3.5 rounded-full bg-white text-darkbg font-semibold hover:bg-gray-200 transition flex items-center space-x-2 shadow-lg">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span id="copy-text">abdulwassay1005@gmail.com</span>
+                </button>
+
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/923285658709" target="_blank" class="px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition flex items-center space-x-2 shadow-lg shadow-emerald-600/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>+92 328 5658709</span>
+                </a>
+
+                <!-- LinkedIn Button -->
+                <a href="https://linkedin.com/in/itswassay/" target="_blank" class="px-6 py-3.5 rounded-full bg-cardbg hover:bg-cardborder border border-cardborder text-gray-200 font-semibold transition flex items-center space-x-2">
+                    <i class="fa-brands fa-linkedin text-lg text-indigo-400"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+            </div>
+            
+            <div id="toast" class="fixed bottom-6 right-6 z-50 bg-indigo-600 text-white text-sm px-5 py-3 rounded-2xl shadow-xl transform translate-y-20 opacity-0 transition-all duration-300">
+                Email copied to clipboard!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-cardborder py-12 text-center text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Abdul Wassay. All rights reserved.
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="https://linkedin.com/in/itswassay/" target="_blank" class="hover:text-white transition">LinkedIn</a>
+                <a href="https://wa.me/923285658709" target="_blank" class="hover:text-white transition">WhatsApp</a>
+                <a href="mailto:abdulwassay1005@gmail.com" class="hover:text-white transition">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Copy Email Function using legacy execCommand for maximum iframe compatibility
+        function copyEmail() {
+            const email = "abdulwassay1005@gmail.com";
+            const textArea = document.createElement("textarea");
+            textArea.value = email;
+            textArea.style.position = "fixed";  // Avoid scrolling to bottom
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showToast();
+                } else {
+                    alert("Failed to copy email.");
+                }
+            } catch (err) {
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+
+            document.body.removeChild(textArea);
+        }
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
